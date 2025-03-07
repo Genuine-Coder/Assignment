@@ -16,7 +16,7 @@ function Greet() {
 
     try {
       const response = await axios.get(
-        `http://localhost:8000/api/greet?name=${greetInput}`
+        `https://api-app-sage.vercel.app/api/greet?name=${greetInput}`
       );
       setGreeting(response.data.message);
       setTrack(true);
